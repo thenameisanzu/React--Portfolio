@@ -1,8 +1,21 @@
 :root {
-  --primary-color: #38bdf8;
-  --bg-color: #0f172a;
-  --text-color: #f1f5f9;
-  --muted-text: #94a3b8;
-  --section-padding: 4rem 2rem;
-  --max-width: 1200px;
+  /* Light mode (Pastel Theme) */
+  --bg-color: #f9f9f9;
+  --text-color: #333333;
+  --primary-color: #a8dadc; /* pastel blue */
+  --secondary-color: #fcd5ce; /* soft pink */
+  --accent-color: #ffe5ec; /* very light pastel pink */
+  --border-color: #e0e0e0;
+  --card-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+  /* Dark mode */
+  --bg-color: #1a1a1a;
+  --text-color: #f1f1f1;
+  --primary-color: #457b9d; /* darker pastel blue */
+  --secondary-color: #9d4edd; /* violet accent */
+  --accent-color: #2a2a2a;
+  --border-color: #333333;
+  --card-bg: #242424;
 }

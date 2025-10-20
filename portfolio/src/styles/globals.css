@@ -1,5 +1,4 @@
 @import './variables.css';
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
 * {
   margin: 0;
@@ -7,23 +6,37 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
+html,body {
+  height: 100%;
   background-color: var(--bg-color);
   color: var(--text-color);
-  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-section {
-  padding: var(--section-padding);
-  max-width: var(--max-width);
-  margin: 0 auto;
-}
-
-h2 {
-  font-size: 2rem;
-  font-weight: 600;
+a {
   color: var(--primary-color);
-  text-align: center;
-  margin-bottom: 1.5rem;
+  text-decoration: none;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1rem;
+  transition: background-color 0.3s ease;
 }
