@@ -1,0 +1,19 @@
+.heroText {
+  margin-top: 2rem;
+}
+
+.subTitle {
+  font-size: 1.2rem;
+  color: var(--muted-text, var(--text-color));
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.role {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: var(--primary-color);
+}

@@ -5,8 +5,7 @@ const About = () => (
   <section id="about">
     <h2>About Me</h2>
     <p>
-      Passionate web developer focused on building responsive, modern web
-      applications with React and Vite.
+      I'm Ansu, a passionate MERN Stack web developer who loves building interactive and responsive websites. I specialize in JavaScript, Node.js, and creative UI design. Always learning, always coding.
     </p>
   </section>
 );

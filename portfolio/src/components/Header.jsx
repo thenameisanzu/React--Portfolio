@@ -35,11 +35,6 @@ const Header = () => {
           {darkMode ? "☀️ Light" : "🌙 Dark"}
         </button>
 
-        <div className={styles.heroText}>
-          <h2 className={styles.subTitle}>Hey There,</h2>
-          <h1 className={styles.title}>ANSU HERE</h1>
-          <h3 className={styles.role}>MERN Stack Developer</h3>
-        </div>
       </div>
     </header>
   );
