@@ -45,3 +45,17 @@
   color: #555;
   line-height: 1.6;
 }
+
+.viewBtn{
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.viewBtn:hover {
+  color: #457b9d;
+}
+
+

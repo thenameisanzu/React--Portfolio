@@ -1,19 +1,59 @@
 .heroText {
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column; /* stack text and image vertically */
+  align-items: center;    /* center horizontally */
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+  gap: 1rem; /* space between text and image */
 }
 
 .subTitle {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--muted-text, var(--text-color));
 }
 
 .title {
   font-size: 3rem;
   font-weight: bold;
+  color: var(--text-color);
 }
 
 .role {
   font-size: 1.2rem;
   margin-top: 0.5rem;
   color: var(--primary-color);
+}
+
+/* ✅ Hero Image Container */
+.heroImage {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid var(--primary-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.heroImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroImage:hover {
+  transform: scale(3.05);
+}
+
+/* 📱 Responsive for smaller screens */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .heroImage {
+    width: 250px;
+    height: 50px;
+  }
 }

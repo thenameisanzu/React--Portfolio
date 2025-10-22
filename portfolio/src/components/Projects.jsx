@@ -12,6 +12,14 @@ const Projects = () => (
           A simple and customizable Pomodoro Timer built with HTML, CSS, and
           JavaScript to help improve productivity and focus.
         </p>
+        <a
+          href="https://thenameisanzu.github.io/Pomodoro-Timer/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.projectLink}
+        >
+          View Project
+        </a>
       </div>
 
       <div className={styles.projectCard}>
@@ -20,6 +28,14 @@ const Projects = () => (
           A simple calculator app built with HTML, CSS, and JavaScript.
           Supports basic arithmetic operations with a responsive numpad UI.
         </p>
+        <a
+          href="https://thenameisanzu.github.io/Calculator-App/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.projectLink}
+        >
+          View Project
+        </a>
       </div>
 
       <div className={styles.projectCard}>
@@ -30,6 +46,29 @@ const Projects = () => (
           daily tasks with ease — add, edit, complete, and delete tasks in a
           sleek and animated UI.
         </p>
+        <a
+          href="https://thenameisanzu.github.io/ToDoList/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.projectLink}
+        >
+          View Project
+        </a>
+      </div>
+
+      <div className={styles.projectCard}>
+        <h3>Quote Generator</h3>
+        <p>
+          A simple, dynamic, and responsive web application built using HTML, CSS, and JavaScript that fetches and displays random quotes.
+        </p>
+        <a
+          href="https://thenameisanzu.github.io/Quote-Generator/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.projectLink}
+        >
+          View Project
+        </a>
       </div>
     </div>
   </section>
