@@ -1,0 +1,35 @@
+.footer {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 25px 10px;
+  border-top: 1px solid #e0e0e0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.socials {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: #007bff;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.icon:hover {
+  color: #0056b3;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .footer {
+    font-size: 0.9rem;
+  }
+  .socials {
+    gap: 18px;
+  }
+}

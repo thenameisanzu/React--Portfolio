@@ -27,11 +27,22 @@
   text-align: left;
   transition: all 0.3s ease;
   max-width: 350px;
+  
+  /* make whole card clickable */
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .projectCard:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.projectCard:active {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .projectCard h3 {
@@ -46,16 +57,7 @@
   line-height: 1.6;
 }
 
-.viewBtn{
-  color: var(--text-color);
-  font-size: 1.1rem;
-  font-weight: 500;
-  text-decoration: none;
-  transition: color 0.3s ease;
+.projectCard h3,
+.projectCard p {
+  color: inherit;
 }
-
-.viewBtn:hover {
-  color: #457b9d;
-}
-
-
