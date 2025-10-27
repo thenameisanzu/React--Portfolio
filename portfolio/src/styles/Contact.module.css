@@ -67,3 +67,11 @@
 .submitButton:active {
   transform: translateY(0);
 }
+
+.successMessage {
+  margin-top: 1.5rem;
+  color: #00c853;
+  font-weight: 600;
+  text-align: center;
+  animation: fadeInUp 0.5s ease forwards;
+}
