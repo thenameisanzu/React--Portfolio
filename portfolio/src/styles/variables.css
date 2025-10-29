@@ -1,21 +1,27 @@
 :root {
-  /* Light mode (Pastel Theme) */
-  --bg-color: #f9f9f9;
-  --text-color: #333333;
-  --primary-color: #a8dadc; /* pastel blue */
-  --secondary-color: #fcd5ce; /* soft pink */
-  --accent-color: #ffe5ec; /* very light pastel pink */
-  --border-color: #e0e0e0;
-  --card-bg: #ffffff;
+  /* Light mode — Frosted Pastel & Neon Fusion */
+  --bg-color: #fdfcff; /* off-white with a lavender tint */
+  --text-color: #2c2c2c;
+  --primary-color: #7dd3fc; /* sky neon blue */
+  --secondary-color: #fbcfe8; /* soft rose pink */
+  --accent-color: #e0f2fe; /* gentle icy blue for hover cards */
+  --border-color: #d1d5db; /* light neutral gray */
+  --card-bg: #ffffff; /* clean white cards */
+  --highlight-color: #a5b4fc; /* lavender glow for headings */
+  --gradient-bg: linear-gradient(135deg, #a5b4fc 0%, #7dd3fc 100%);
+  --shadow-glow: 0 0 15px rgba(125, 211, 252, 0.4);
 }
 
 [data-theme="dark"] {
-  /* Dark mode */
-  --bg-color: #1a1a1a;
-  --text-color: #f1f1f1;
-  --primary-color: #457b9d; /* darker pastel blue */
-  --secondary-color: #9d4edd; /* violet accent */
-  --accent-color: #2a2a2a;
-  --border-color: #333333;
-  --card-bg: #242424;
+  /* Dark mode — Deep Galaxy Glow */
+  --bg-color: #0f172a; /* deep navy black */
+  --text-color: #f1f5f9; /* soft white-blue text */
+  --primary-color: #38bdf8; /* cyan glow */
+  --secondary-color: #c084fc; /* violet glow */
+  --accent-color: #1e293b; /* slightly lighter background for cards */
+  --border-color: #334155; /* dim border */
+  --card-bg: #1e293b; /* muted slate for cards */
+  --highlight-color: #818cf8; /* cool violet highlight */
+  --gradient-bg: linear-gradient(135deg, #6366f1 0%, #38bdf8 100%);
+  --shadow-glow: 0 0 25px rgba(99, 102, 241, 0.4);
 }
