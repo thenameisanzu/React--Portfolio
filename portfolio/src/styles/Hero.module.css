@@ -45,3 +45,50 @@
   transform: scale(1.05);
   box-shadow: 0 6px 25px var(--secondary-color);
 }
+
+/* 📱 Responsive styles */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .subTitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroText {
+    padding: 80px 10px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .subTitle {
+    font-size: 1.2rem;
+  }
+  .role {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  .heroImage img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.7rem;
+    letter-spacing: 0.5px;
+  }
+  .subTitle {
+    font-size: 1rem;
+  }
+  .role {
+    font-size: 0.9rem;
+  }
+  .heroImage img {
+    width: 120px;
+    height: 120px;
+  }
+}

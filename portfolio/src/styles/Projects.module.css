@@ -1,16 +1,18 @@
 #projects {
   padding: 60px 20px;
-  background-color: #f8f9fa;
+  background-color: var(--bg-color);
   text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #projects h2 {
   font-size: 2rem;
   margin-bottom: 40px;
-  color: #333;
+  color: var(--text-color);
   letter-spacing: 1px;
 }
 
+/* ===== GRID ===== */
 .projectGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -19,26 +21,27 @@
   padding: 0 20px;
 }
 
+/* ===== CARD ===== */
 .projectCard {
-  background: #ffffff;
+  background: var(--card-bg);
   border-radius: 12px;
+  border: 1px solid var(--border-color);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 24px;
-  cursor: pointer;
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   max-width: 350px;
-  
-  /* make whole card clickable */
+  width: 100%;
   display: block;
   text-decoration: none;
-  color: inherit;
+  color: var(--text-color);
   cursor: pointer;
 }
 
 .projectCard:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px var(--secondary-color);
+  background: var(--accent-color);
 }
 
 .projectCard:active {
@@ -49,16 +52,79 @@
 .projectCard h3 {
   font-size: 1.4rem;
   margin-bottom: 12px;
-  color: #222;
+  color: var(--text-color);
 }
 
 .projectCard p {
   font-size: 0.95rem;
-  color: #555;
+  color: var(--text-color);
+  opacity: 0.85;
   line-height: 1.6;
 }
 
-.projectCard h3,
-.projectCard p {
-  color: inherit;
+/* ===== RESPONSIVE STYLES ===== */
+@media (max-width: 1024px) {
+  #projects {
+    padding: 50px 15px;
+  }
+
+  #projects h2 {
+    font-size: 1.8rem;
+  }
+
+  .projectCard {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  #projects {
+    padding: 40px 10px;
+  }
+
+  #projects h2 {
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+  }
+
+  .projectCard {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .projectCard h3 {
+    font-size: 1.2rem;
+  }
+
+  .projectCard p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #projects {
+    padding: 30px 10px;
+  }
+
+  #projects h2 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+  }
+
+  .projectGrid {
+    gap: 18px;
+  }
+
+  .projectCard {
+    padding: 18px;
+  }
+
+  .projectCard h3 {
+    font-size: 1.1rem;
+  }
+
+  .projectCard p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
 }
