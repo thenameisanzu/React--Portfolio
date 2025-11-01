@@ -46,6 +46,26 @@
   box-shadow: 0 6px 25px var(--secondary-color);
 }
 
+.resumeButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #0abab5;
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 10px 18px;
+  text-decoration: none;
+  margin-top: 25px;
+  transition: all 0.3s ease;
+}
+
+.resumeButton:hover {
+  background-color: #089b9b;
+  box-shadow: 0 0 15px rgba(10, 186, 181, 0.4);
+}
+
 /* 📱 Responsive styles */
 @media (max-width: 1024px) {
   .title {

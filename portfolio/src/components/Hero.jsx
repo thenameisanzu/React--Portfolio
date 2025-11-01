@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import profilepic from "../assets/propic.jpeg";
 import styles from "../styles/Hero.module.css";
+import { FaDownload } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -51,6 +52,26 @@ const Hero = () => {
           }}
         />
       </motion.div>
+
+      {/* Download Resume Button */}
+      <motion.a
+        href="/resume.pdf" // ✅ just reference it directly if it's in /public
+        download="Ansu_VS_Resume.pdf"
+        className={styles.resumeButton}
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.05, duration: 0.05 }}
+        whileHover={{
+          scale: 1.05,
+          backgroundColor: "#0077ff",
+          color: "#fff",
+          boxShadow: "0px 0px 12px rgba(0, 119, 255, 0.6)",
+        }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <FaDownload style={{ marginRight: "8px" }} />
+        Download Résumé
+      </motion.a>
     </div>
   );
 };
