@@ -5,11 +5,44 @@
   justify-content: center;
   padding: 100px 20px;
   text-align: center;
-  background-color: var(--bg-color);
   color: var(--text-color);
-  transition: background-color 0.4s ease, color 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: none; /* optional, for a clean spotlight effect */
+
+  background-image: url("../assets/bgimg3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+/* 👇 Dark overlay that hides the background except under the cursor */
+.heroText::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--bg-color); /* same as your default background */
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+
+  -webkit-mask-image: radial-gradient(
+    circle 150px at var(--x, 50%) var(--y, 50%),
+    transparent 0%,
+    black 100%
+  );
+  mask-image: radial-gradient(
+    circle 250px at var(--x, 50%) var(--y, 50%),
+    transparent 0%,
+    black 100%
+  );
+}
+
+
+.heroText:hover::after {
+  transition: -webkit-mask-position 0.2s ease, mask-position 0.2s ease;
+  opacity: 1;
+}
 .subTitle {
   font-size: 1.5rem;
   color: var(--secondary-color);
@@ -66,7 +99,7 @@
   box-shadow: 0 0 15px rgba(10, 186, 181, 0.4);
 }
 
-/* 📱 Responsive styles */
+
 @media (max-width: 1024px) {
   .title {
     font-size: 2.5rem;

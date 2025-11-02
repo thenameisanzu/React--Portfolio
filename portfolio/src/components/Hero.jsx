@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import profilepic from "../assets/propic.jpeg";
 import styles from "../styles/Hero.module.css";
 import { FaDownload } from "react-icons/fa";
 
 const Hero = () => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    setPosition({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    });
+  };
+
   return (
-    <div className={styles.heroText}>
+    <div
+      className={styles.heroText}
+      onMouseMove={handleMouseMove}
+      style={{
+        "--x": `${position.x}px`,
+        "--y": `${position.y}px`,
+      }}
+    >
       <motion.h2
         className={styles.subTitle}
         initial={{ opacity: 0, y: 30 }}
@@ -53,9 +70,8 @@ const Hero = () => {
         />
       </motion.div>
 
-      {/* Download Resume Button */}
       <motion.a
-        href="/resume.pdf" // ✅ just reference it directly if it's in /public
+        href="/resume.pdf"
         download="Ansu_VS_Resume.pdf"
         className={styles.resumeButton}
         initial={{ opacity: 0, y: 20 }}
