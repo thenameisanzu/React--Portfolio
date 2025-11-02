@@ -1,27 +1,27 @@
 :root {
-  /* Light mode — Frosted Pastel & Neon Fusion */
-  --bg-color: #fdfcff; /* off-white with a lavender tint */
-  --text-color: #2c2c2c;
-  --primary-color: #7dd3fc; /* sky neon blue */
-  --secondary-color: #fbcfe8; /* soft rose pink */
-  --accent-color: #e0f2fe; /* gentle icy blue for hover cards */
-  --border-color: #d1d5db; /* light neutral gray */
-  --card-bg: #ffffff; /* clean white cards */
-  --highlight-color: #a5b4fc; /* lavender glow for headings */
-  --gradient-bg: linear-gradient(135deg, #a5b4fc 0%, #7dd3fc 100%);
-  --shadow-glow: 0 0 15px rgba(125, 211, 252, 0.4);
+  /* Light mode — Energetic Pastel Neon */
+  --bg-color: #f7f9ff;         /* Very subtle cool off-white */
+  --text-color: #1e293b;        /* Dark slate blue for crisp contrast */
+  --primary-color: #0ea5e9;     /* Vibrant Sky Blue Neon */
+  --secondary-color: #ec4899;   /* Hot Pink / Magenta */
+  --accent-color: #e0f3ff;      /* Very light pale blue for hover/subtle elements */
+  --border-color: #cbd5e1;      /* Cool light gray */
+  --card-bg: #ffffff;          /* Pristine white cards */
+  --highlight-color: #6366f1;   /* Electric Violet for headings/emphasis */
+  --gradient-bg: linear-gradient(135deg, #6366f1 0%, #0ea5e9 100%); /* Violet to Sky Blue */
+  --shadow-glow: 0 0 18px rgba(14, 165, 233, 0.5); /* Primary color glow */
 }
 
 [data-theme="dark"] {
-  /* Dark mode — Deep Galaxy Glow */
-  --bg-color: #0f172a; /* deep navy black */
-  --text-color: #f1f5f9; /* soft white-blue text */
-  --primary-color: #38bdf8; /* cyan glow */
-  --secondary-color: #c084fc; /* violet glow */
-  --accent-color: #1e293b; /* slightly lighter background for cards */
-  --border-color: #334155; /* dim border */
-  --card-bg: #1e293b; /* muted slate for cards */
-  --highlight-color: #818cf8; /* cool violet highlight */
-  --gradient-bg: linear-gradient(135deg, #6366f1 0%, #38bdf8 100%);
-  --shadow-glow: 0 0 25px rgba(99, 102, 241, 0.4);
+  /* Dark mode — Retro-Futuristic Deep Cyan Glow */
+  --bg-color: #0c0a1a;         /* Ultra-deep, near-black with a hint of purple */
+  --text-color: #e2e8f0;        /* Off-white text for excellent legibility */
+  --primary-color: #2dd4bf;     /* Electric Cyan / Aqua Glow */
+  --secondary-color: #a78bfa;   /* Medium Bright Lavender/Purple */
+  --accent-color: #1e1b32;      /* Darker slate for less critical background areas */
+  --border-color: #3f3655;      /* Muted dark purple-gray border */
+  --card-bg: #110e25;          /* Very dark, slightly purple-tinted card background */
+  --highlight-color: #facc15;   /* Bright Yellow-Gold for attention */
+  --gradient-bg: linear-gradient(135deg, #a78bfa 0%, #2dd4bf 100%); /* Lavender to Cyan */
+  --shadow-glow: 0 0 30px rgba(45, 212, 191, 0.6); /* Primary color glow */
 }
