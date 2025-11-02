@@ -32,7 +32,7 @@ const Header = () => {
         </nav>
 
         <button onClick={handleToggle} className={styles.themeToggle}>
-          {darkMode ? "☀️ Light" : "Spotlight Mode 💡"}
+          {darkMode ? "Lights On 💡" : "Lights Off 🌑"}
         </button>
 
       </div>
