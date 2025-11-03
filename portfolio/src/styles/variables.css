@@ -1,27 +1,27 @@
 :root {
-  /* Light mode — Energetic Pastel Neon */
-  --bg-color: #f7f9ff;         /* Very subtle cool off-white */
-  --text-color: #1e293b;        /* Dark slate blue for crisp contrast */
-  --primary-color: #0ea5e9;     /* Vibrant Sky Blue Neon */
-  --secondary-color: #ec4899;   /* Hot Pink / Magenta */
-  --accent-color: #e0f3ff;      /* Very light pale blue for hover/subtle elements */
-  --border-color: #cbd5e1;      /* Cool light gray */
-  --card-bg: #ffffff;          /* Pristine white cards */
-  --highlight-color: #6366f1;   /* Electric Violet for headings/emphasis */
-  --gradient-bg: linear-gradient(135deg, #6366f1 0%, #0ea5e9 100%); /* Violet to Sky Blue */
-  --shadow-glow: 0 0 18px rgba(14, 165, 233, 0.5); /* Primary color glow */
+  /* Light mode — Fresh Pastel Green Theme */
+  --bg-color: #f8fff9;          /* Soft, very pale mint background */
+  --text-color: #1f2937;        /* Deep charcoal gray for contrast */
+  --primary-color: #34d399;     /* Pastel Emerald Green */
+  --secondary-color: #86efac;   /* Light Mint Green */
+  --accent-color: #e8fdf3;      /* Gentle pale green for hover/subtle areas */
+  --border-color: #d1fae5;      /* Light pastel green-gray */
+  --card-bg: #ffffff;           /* Clean white for cards */
+  --highlight-color: #10b981;   /* Vibrant fresh green for emphasis */
+  --gradient-bg: linear-gradient(135deg, #10b981 0%, #34d399 100%); /* Vibrant green blend */
+  --shadow-glow: 0 0 18px rgba(16, 185, 129, 0.4); /* Soft green glow */
 }
 
 [data-theme="dark"] {
-  /* Dark mode — Retro-Futuristic Deep Cyan Glow */
-  --bg-color: #0c0a1a;         /* Ultra-deep, near-black with a hint of purple */
-  --text-color: #e2e8f0;        /* Off-white text for excellent legibility */
-  --primary-color: #2dd4bf;     /* Electric Cyan / Aqua Glow */
-  --secondary-color: #a78bfa;   /* Medium Bright Lavender/Purple */
-  --accent-color: #1e1b32;      /* Darker slate for less critical background areas */
-  --border-color: #3f3655;      /* Muted dark purple-gray border */
-  --card-bg: #110e25;          /* Very dark, slightly purple-tinted card background */
-  --highlight-color: #facc15;   /* Bright Yellow-Gold for attention */
-  --gradient-bg: linear-gradient(135deg, #a78bfa 0%, #2dd4bf 100%); /* Lavender to Cyan */
-  --shadow-glow: 0 0 30px rgba(45, 212, 191, 0.6); /* Primary color glow */
+  /* Dark mode — Futuristic Emerald Glow */
+  --bg-color: #07110b;          /* Deep near-black with subtle green tint */
+  --text-color: #e5f9ec;        /* Light mint white for legibility */
+  --primary-color: #22c55e;     /* Bright Emerald Green */
+  --secondary-color: #4ade80;   /* Lively Lime-Green accent */
+  --accent-color: #0e1d14;      /* Dark green-gray background for sections */
+  --border-color: #1f3b2a;      /* Muted forest green border */
+  --card-bg: #0c1810;           /* Dark, soft green-black card background */
+  --highlight-color: #bbf7d0;   /* Soft mint highlight */
+  --gradient-bg: linear-gradient(135deg, #22c55e 0%, #4ade80 100%); /* Emerald to Lime gradient */
+  --shadow-glow: 0 0 30px rgba(34, 197, 94, 0.5); /* Bright green neon glow */
 }

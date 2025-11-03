@@ -8,43 +8,57 @@
 .skillsTitle {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 30px;
-  color: var(--text-color);
+  margin-bottom: 35px; /* Slightly increased margin */
+  /* Use highlight color for a strong, theme-aligned title */
+  color: var(--highlight-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .skillsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Minimized base size for more items per row */
+  gap: 30px 20px; /* Reduced horizontal gap */
   justify-items: center;
   align-items: center;
-  max-width: 800px;
+  max-width: 900px; /* Increased max width */
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .skillCard {
+  /* Use theme colors instead of hardcoded #e2e8f0 */
   background: var(--card-bg);
-  padding: 20px;
+  padding: 20px 10px; /* Adjusted padding for better fit */
   border-radius: 12px;
   border: 1px solid var(--border-color);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
   cursor: pointer;
-  width: 120px;
+  width: 100%; /* Make it fill the grid cell */
+  max-width: 140px; /* Limit overall size */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skillCard:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 15px var(--secondary-color);
+  transform: translateY(-5px) scale(1.05); /* Combined subtle lift and scale */
+  /* Apply a beautiful shadow glow effect on hover */
+  box-shadow: 0 10px 20px var(--secondary-color), var(--shadow-glow);
+  background-color: var(--accent-color);
 }
 
 .skillIcon {
   font-size: 3rem;
   margin-bottom: 10px;
+  /* Use primary color for the icon for a vibrant green pop */
+  color: var(--primary-color);
 }
 
 .skillName {
   font-size: 0.9rem;
   font-weight: 600;
   color: var(--text-color);
+  text-transform: capitalize;
 }
