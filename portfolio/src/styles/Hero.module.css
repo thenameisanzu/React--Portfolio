@@ -52,7 +52,7 @@
 .title {
   font-size: 3rem;
   font-weight: bold;
-  color: var(--text-color);
+  color: #ffffff;
   margin: 10px 0;
   letter-spacing: 1px;
 }
