@@ -1,3 +1,4 @@
+/* ===== HEADER WRAPPER ===== */
 .header {
   padding: 2rem;
   background-color: var(--bg-color);
@@ -21,16 +22,49 @@
   flex-wrap: wrap; /* allows wrapping on smaller screens */
 }
 
+/* 🌈 NAV LINK STYLE + EFFECTS */
 .navLink {
+  position: relative;
   color: var(--text-color);
   font-size: 1.1rem;
   font-weight: 500;
   text-decoration: none;
-  transition: color 0.3s ease;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
+/* ✨ Underline Animation */
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), #00f5d4);
+  background-size: 200% 100%;
+  box-shadow: 0 0 8px var(--primary-color);
+  transition: width 0.35s ease, background-position 0.5s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+  background-position: right center;
+}
+
+/* 💫 Glow Effect */
 .navLink:hover {
   color: var(--primary-color);
+  text-shadow: 0 0 6px var(--primary-color),
+               0 0 12px var(--secondary-color);
+}
+
+/* 🌙 Dark Mode Glow Variant */
+[data-theme="dark"] .navLink:hover {
+  color: var(--secondary-color);
+  text-shadow: 0 0 10px var(--secondary-color),
+               0 0 20px var(--secondary-color),
+               0 0 30px var(--primary-color);
 }
 
 /* ===== THEME TOGGLE ===== */
@@ -45,12 +79,13 @@
   border-radius: 25px;
   cursor: pointer;
   font-size: 0.9rem;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
 
 .themeToggle:hover {
   background: var(--secondary-color);
   transform: scale(1.05);
+  box-shadow: 0 0 12px var(--secondary-color);
 }
 
 /* 📱 RESPONSIVENESS */

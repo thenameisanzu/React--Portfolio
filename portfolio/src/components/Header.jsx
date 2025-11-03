@@ -21,13 +21,13 @@ const Header = () => {
       <div className={styles.headerContent}>
         <nav className={styles.navbar}>
           <a href="#about" className={styles.navLink}>
-            About
+            ABOUT
           </a>
           <a href="#projects" className={styles.navLink}>
-            Projects
+            PROJECTS
           </a>
           <a href="#contact" className={styles.navLink}>
-            Contact
+            CONTACT
           </a>
         </nav>
 

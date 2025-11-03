@@ -11,7 +11,7 @@ const Skills = () => {
     { icon: <FaJs color="#F7DF1E" />, name: "JavaScript" },
     { icon: <FaReact color="#61DBFB" />, name: "React" },
     { icon: <FaNodeJs color="#3C873A" />, name: "Node.js" },
-    { icon: <SiExpress color="#ffffff" />, name: "Express.js" },
+    { icon: <SiExpress color="#d9dddc" />, name: "Express.js" },
     { icon: <SiMongodb color="#47A248" />, name: "MongoDB" },
   ];
 
