@@ -33,11 +33,7 @@ const Projects = () => {
       desc: "A clean, interactive, and responsive To-Do List application built with HTML, CSS, and JavaScript. This app allows users to manage their daily tasks with ease — add, edit, complete, and delete tasks in a sleek and animated UI.",
       link: "https://thenameisanzu.github.io/ToDoList/",
     },
-    {
-      title: "Quote Generator",
-      desc: "A simple, dynamic, and responsive web application built using HTML, CSS, and JavaScript that fetches and displays random quotes.",
-      link: "https://thenameisanzu.github.io/Quote-Generator/",
-    },
+    
   ];
 
   return (

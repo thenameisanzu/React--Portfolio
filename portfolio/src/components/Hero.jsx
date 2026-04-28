@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import profilepic from "../assets/propic.jpeg";
+import profilepic from "../assets/propic.jpg";
 import styles from "../styles/Hero.module.css";
 import { FaDownload } from "react-icons/fa";
 
@@ -30,7 +30,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
       >
-        Hey There,
+        Turning complex ideas into sleek, custom-coded digital products.
       </motion.h2>
 
       <motion.h1
@@ -39,7 +39,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.6 }}
       >
-        ANSU HERE
+        Ansu V S
       </motion.h1>
 
       <motion.h3
@@ -48,7 +48,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.6 }}
       >
-        MERN Stack Developer
+        Full Stack Developer & Designer
       </motion.h3>
 
       <motion.div
